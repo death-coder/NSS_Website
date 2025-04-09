@@ -1,0 +1,35 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    background-color: #f8f9fa; /* Light color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 1rem 1rem;  
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    font-family:cursive;
+    color: #343a40; /* Dark grey for contrast */
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s, transform 0.2s;
+  }
+  
+  .nav-list li a:hover {
+    color: #007bff; /* Blue on hover */
+    transform: translateY(-2px);
+  }
+  
