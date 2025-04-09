@@ -1,0 +1,159 @@
+.footer-section {
+    background: #121212;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-section h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .footer-section h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #a0a0a0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer-info p {
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background: #a0a0a0;
+    color: #121212;
+    transform: translateY(-3px);
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer-links ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #fff;
+    padding-left: 5px;
+  }
+  
+  .footer-links ul li a::before {
+    content: "→";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .footer-links ul li a:hover::before {
+    opacity: 1;
+    left: -20px;
+  }
+  
+  .footer-newsletter p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+  }
+  
+  .btn-subscribe {
+    background: #a0a0a0;
+    color: #121212;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .btn-subscribe:hover {
+    background: #909090;
+    transform: translateY(-2px);
+  }
+  
+  .footer-legal {
+    background: #0c0c0c;
+    padding: 20px 0;
+    font-size: 13px;
+  }
+  
+  .footer-legal .copyright {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer-legal .credits {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer-legal .credits a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-legal .credits a:hover {
+    color: #fff;
+  }
+  
+  /* Add Bootstrap Icons */
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
+  

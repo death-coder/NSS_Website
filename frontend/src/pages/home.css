@@ -1,0 +1,150 @@
+
+:root {
+    --bs-primary: #7f9dd1;
+    --bs-primary-rgb: 160, 160, 160;
+  }
+  
+  .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  .btn-primary:hover, 
+  .btn-primary:focus, 
+  .btn-primary:active {
+    background-color: #909090;
+    border-color: #909090;
+  }
+  
+  /* You may need to override other primary-colored elements */
+
+  .nsslogo{
+    width: 5rem;
+    height: 5rem;
+  }
+  
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    background-image: url('https://source.unsplash.com/random/1600x900/?college');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Styling */
+  .section-container {
+    padding: 5rem 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-underline {
+    height: 4px;
+    width: 70px;
+    background-color: #0d6efd;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  /* Event Cards */
+  .event-card {
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Stats */
+  .stat-item {
+    padding: 2rem 0;
+  }
+  
+  .stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0d6efd;
+  }
+  
+  .stat-label {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Testimonials */
+  .testimonial-carousel {
+    padding: 2rem 0;
+  }
+  
+  .testimonial-item {
+    padding: 0 15%;
+  }
+  
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  .testimonial-role {
+    color: #777;
+  }
+  
+  /* News Cards */
+  .news-card {
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
