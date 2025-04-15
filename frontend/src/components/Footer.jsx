@@ -34,8 +34,8 @@ function Footer() {
                 <ul>
                   <li><a href="/">Home</a></li>
                   <li><a href="/AboutUs">About NSS</a></li>
-                  <li><a href="/team">Our Team</a></li>
-                  <li><a href="/events">Events</a></li>
+                  <li><a href="/Team">Our Team</a></li>
+                  <li><a href="/Events">Events</a></li>
                   {/* <li><a href="/gallery">Gallery</a></li> */}
                 </ul>
               </div>
