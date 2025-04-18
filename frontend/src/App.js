@@ -6,6 +6,9 @@ import Team from "./pages/Team";
 import AboutUs from "./pages/AboutUs";
 import Events from "./pages/Events";
 import Footer from './components/Footer'
+import AdminLogin from "./pages/AdminLogin";
+import AdminDashboard from "./pages/AdminDashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -17,6 +20,15 @@ function App() {
         <Route path="/Team" element={<Team />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Events" element={<Events />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route
+          path="/admin/dashboard"
+          element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
       <Footer/>
     </Router>
