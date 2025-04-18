@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import './Footer.css';
 
 function Footer() {
+
+  const navigate = useNavigate();
   return (
     <footer className="footer-section">
       <div className="container">
@@ -32,11 +35,16 @@ function Footer() {
               <div className="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                  <li><a href="/">Home</a></li>
+                  {/* <li><a href="/">Home</a></li>
                   <li><a href="/AboutUs">About NSS</a></li>
                   <li><a href="/Team">Our Team</a></li>
-                  <li><a href="/Events">Events</a></li>
+                  <li><a href="/Events">Events</a></li> */}
                   {/* <li><a href="/gallery">Gallery</a></li> */}
+
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/team">Team</Link></li>
+                  <li><Link to="/AboutUs">About</Link></li>
+                  <li><Link to="/Events">Events</Link></li>
                 </ul>
               </div>
             </div>

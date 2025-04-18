@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom"; // ✅ Import fixed
+import { Link, useNavigate } from "react-router-dom"; // Import fixed
 import "./Navbar.css"; // optional if you want to style
 const Navbar = () => {
   const isAdminLoggedIn = localStorage.getItem("isAdminLoggedIn") === "true";

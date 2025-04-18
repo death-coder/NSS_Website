@@ -48,10 +48,10 @@ app.get('/api/events', async (req, res) => {
 
 app.post('/api/events', async (req, res) => {
   try {
-    const { title, description, date, venue, imageUrl } = req.body;
+    const { title, description, date, venue, imageurl } = req.body;
 
     // Basic validation
-    if (!title || !description || !date || !imageUrl || !venue) {
+    if (!title || !description || !date || !imageurl || !venue) {
       return res.status(400).json({ message: 'All fields are required' });
     }
 
@@ -60,7 +60,7 @@ app.post('/api/events', async (req, res) => {
       description,
       date,
       venue,
-      imageUrl,
+      imageurl,
     });
 
     await newEvent.save();
