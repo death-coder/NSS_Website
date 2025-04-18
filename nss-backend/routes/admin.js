@@ -5,9 +5,9 @@ const Event = require("../models/Event"); // Adjust the path as needed
 // Create a new event
 router.post("/events", async (req, res) => {
   try {
-    const { title, description, date, imageUrl } = req.body;
+    const { title, description, date, venue, imageurl } = req.body;
 
-    if (!title || !description || !date || !imageUrl) {
+    if (!title || !description || !date || !imageurl || !venue) {
       return res.status(400).json({ message: "All fields are required" });
     }
 
@@ -15,7 +15,8 @@ router.post("/events", async (req, res) => {
       title,
       description,
       date,
-      imageUrl,
+      venue,
+      imageurl,
     });
 
     await newEvent.save();

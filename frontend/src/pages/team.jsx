@@ -1,5 +1,5 @@
 import React from "react";
-import "./team.css";
+import "./Team.css";
 
 const teamData = {
     faculty: [

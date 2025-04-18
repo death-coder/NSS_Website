@@ -25,4 +25,6 @@ yarn-error.log*
 frontend/node_modules/
 nss-backend/node_modules/
 
+frontend/public/env.js
+
 .env
