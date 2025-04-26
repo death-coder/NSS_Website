@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function AdminLogin() {
@@ -6,16 +6,14 @@ function AdminLogin() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // const handleLogin = (e) => {
-  //   e.preventDefault();
-  //   // Dummy credentials
-  //   if (username === "admin" && password === "password123") {
-  //     localStorage.setItem("isAdminLoggedIn", true);
-  //     navigate("/admin/dashboard");
-  //   } else {
-  //     alert("Invalid credentials");
-  //   }
-  // };
+
+  useEffect(()=>{
+    const isAdminLoggedIn = localStorage.getItem("isAdminLoggedIn");
+    if(isAdminLoggedIn){
+      navigate("/admin/dashboard");
+    }
+  }, [navigate]);
+
 
   const handleLogin = async (e) => {
     e.preventDefault();
