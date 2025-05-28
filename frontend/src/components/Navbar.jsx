@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="backdrop-blur-md bg-white/30 border-b border-white/20 sticky top-0 z-50 shadow-lg font-poppins">
+    <nav className="backdrop-blur-md  border-b border-white/20 sticky top-0 z-50 shadow-lg font-poppins">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
         {/* Logo + Branding */}
         <Link to="/" className="flex items-center gap-3">
@@ -77,51 +77,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-// import { Link, useNavigate } from "react-router-dom"; // Import fixed
-// import "./Navbar.css"; // optional if you want to style
-// const Navbar = () => {
-//   const isAdminLoggedIn = localStorage.getItem("isAdminLoggedIn") === "true";
-//   const navigate = useNavigate();
-
-//   const handleLogout = () => {
-//     localStorage.removeItem("isAdminLoggedIn");
-//     navigate("/admin/login");
-//   };
-
-//   return (
-//     <nav className="navbar">
-//       <ul className="nav-list">
-//         <li>
-//           <Link to="/">
-//             <img
-//               className="nsslogo"
-//               src="https://upload.wikimedia.org/wikipedia/commons/9/90/NSS-symbol.jpeg"
-//               alt="NSS Logo"
-//             />
-//           </Link>
-//         </li>
-//         <li><Link to="/">Home</Link></li>
-//         <li><Link to="/team">Team</Link></li>
-//         <li><Link to="/AboutUs">About</Link></li>
-//         <li><Link to="/Events">Events</Link></li>
-//         {isAdminLoggedIn ? (
-//           <>
-//             <li><Link to="/admin/dashboard">Dashboard</Link></li>
-//             <li><button onClick={handleLogout} className="btn btn-link">Logout</button></li>
-//           </>
-//         ) : (
-//           <li><Link to="/admin/login">Admin</Link></li>
-//         )}
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

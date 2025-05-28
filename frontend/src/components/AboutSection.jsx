@@ -24,68 +24,6 @@ const AboutSection = () => {
         </div>
       </div>
     </div>
-
-    // <section className="container my-5">
-    //   {/* Section Title */}
-    //   <h2 className="text-center text-primary mb-4">
-    //     About NSS IIT Guwahati
-    //   </h2>
-
-    //   {/* Flexbox for Image and Text */}
-    //   <div className="row align-items-center">
-    //     {/* Left: NSS Logo */}
-    //     <div className="col-md-5 text-center">
-    //       <img
-    //         src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/National_Service_Scheme.svg/600px-National_Service_Scheme.svg.png"
-    //         alt="NSS Logo"
-    //         className="img-fluid rounded shadow"
-    //         style={{ maxWidth: "80%" }}
-    //       />
-    //     </div>
-
-    //     {/* Right: Mission and Vision */}
-    //     <div className="col-md-7">
-    //       <h4 className="text-primary">Our Mission</h4>
-    //       <p>
-    //         The National Service Scheme (NSS) at IIT Guwahati is dedicated to
-    //         developing students' personality through community service. Our
-    //         mission is to instill social welfare in students and provide service
-    //         to society without bias.
-    //       </p>
-
-    //       <h4 className="text-primary">Our Vision</h4>
-    //       <p>
-    //         We envision a society where young minds are actively engaged in
-    //         nation-building through social service, environmental conservation,
-    //         and community development.
-    //       </p>
-    //     </div>
-    //   </div>
-
-    //   {/* Stats Section */}
-    //   <div className="row mt-4 text-center">
-    //     <div className="col-md-4">
-    //       <div className="p-3 bg-light rounded shadow">
-    //         <h3 className="text-success fw-bold">1000+</h3>
-    //         <p>Volunteers</p>
-    //       </div>
-    //     </div>
-
-    //     <div className="col-md-4">
-    //       <div className="p-3 bg-light rounded shadow">
-    //         <h3 className="text-success fw-bold">50+</h3>
-    //         <p>Projects</p>
-    //       </div>
-    //     </div>
-
-    //     <div className="col-md-4">
-    //       <div className="p-3 bg-light rounded shadow">
-    //         <h3 className="text-success fw-bold">10+</h3>
-    //         <p>Years</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
   );
 };
 

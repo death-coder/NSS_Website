@@ -13,7 +13,7 @@
 
   .hero-parallax {
     height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1400&q=80'); /* replace with actual NSS/IIT Mandi image if you have */
+    background-image: url('https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748198837/CleanlinessDrive2_k4rarf.jpg'); /* replace with actual NSS/IIT Mandi image if you have */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This gives the fixed effect */
