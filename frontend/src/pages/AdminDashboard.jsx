@@ -11,8 +11,10 @@ const AdminDashboard = () => {
 
   // const cloudName = import.meta.env.VITE_CLOUD_NAME;
   // const uploadPreset = import.meta.env.VITE_UPLOAD_PRESET;
-  const cloudName = window.env.CLOUD_NAME;
-const uploadPreset = window.env.UPLOAD_PRESET;
+
+const cloudName = process.env.REACT_APP_CLOUD_NAME;
+const uploadPreset = process.env.REACT_APP_UPLOAD_PRESET;
+
 
 
   const handleImageUpload = async () => {
@@ -22,7 +24,6 @@ const uploadPreset = window.env.UPLOAD_PRESET;
     data.append("cloud_name", cloudName); // 🔁 Change this
 
     const res = await fetch(
-      // "https://api.cloudinary.com/v1_1/dfiyyyjp8/image/upload", // 🔁 Change this
       `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
       {
         method: "POST",
@@ -61,7 +62,7 @@ const uploadPreset = window.env.UPLOAD_PRESET;
         return;  // Don't proceed if image upload failed
       }
 
-      const response = await fetch("http://localhost:5000/api/admin/events", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/admin/events`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
