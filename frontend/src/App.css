@@ -29,11 +29,12 @@
 }
 
 .carousel-item img {
-  width: 100%;
+  /* width: max-content; */
   height: 100vh; /* Adjust as needed */
   /* object-fit: cover; */
   /* opacity: 70%; */
 }
+
 
 .about-section {
   text-align: center;

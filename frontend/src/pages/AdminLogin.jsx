@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function AdminLogin() {
@@ -6,14 +6,38 @@ function AdminLogin() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    // Dummy credentials
-    if (username === "admin" && password === "password123") {
-      localStorage.setItem("isAdminLoggedIn", true);
+
+  useEffect(()=>{
+    const isAdminLoggedIn = localStorage.getItem("isAdminLoggedIn");
+    if(isAdminLoggedIn){
       navigate("/admin/dashboard");
-    } else {
-      alert("Invalid credentials");
+    }
+  }, [navigate]);
+
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5000/api/events/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        localStorage.setItem("isAdminLoggedIn", true);
+        navigate("/admin/dashboard");
+      } else {
+        alert(data.message || "Invalid credentials");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Something went wrong. Try again later.");
     }
   };
 

@@ -114,10 +114,10 @@
   }
   
   .testimonial-image {
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vh;
     border-radius: 50%;
-    object-fit: cover;
+    /* object-fit: cover; */
     margin-bottom: 1.5rem;
   }
   
