@@ -39,28 +39,22 @@ const Carousel = ({ slides = [] }) => {
     const defaultSlides = [
         {
             image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748197831/tbday_plfzys.jpg",
-            title: "Mountain Adventure",
-            subtitle: "Discover breathtaking landscapes",
-            description: "Experience the beauty of nature with stunning mountain views and crystal clear skies."
         },
         {
             image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748198007/AIDSposter_z8bfoo.jpg",
-            title: "Ocean Serenity",
-            subtitle: "Find peace by the sea",
-            description: "Relax and unwind with the soothing sounds of waves and endless ocean horizons."
         },
         {
             image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748411719/wallofchange_f223l9.jpg",
-            title: "Forest Escape",
-            subtitle: "Connect with nature",
-            description: "Immerse yourself in the tranquility of lush green forests and wildlife."
         }
     ];
 
     const carouselSlides = slides.length > 0 ? slides : defaultSlides;
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        // <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full max-w-7xl mx-auto px-4">
+        <div className="aspect-[16/9] sm:aspect-[4/3] md:aspect-[3/2] lg:aspect-[16/9] w-full overflow-hidden rounded-xl">
+
             <style jsx>{`
                 /* Hide default Swiper arrow content */
                 .swiper-button-next::after,
@@ -115,7 +109,7 @@ const Carousel = ({ slides = [] }) => {
                             <img 
                                 src={slide.image}
                                 alt={slide.title}
-                                className="w-full h-full object-fill"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     ))}
@@ -136,6 +130,7 @@ const Carousel = ({ slides = [] }) => {
                 {/* Custom Pagination */}
                 <div className="swiper-pagination !bottom-8"></div>
             </div>
+        </div>
         </div>
     );
 };
