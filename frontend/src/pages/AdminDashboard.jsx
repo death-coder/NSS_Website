@@ -61,7 +61,7 @@ const uploadPreset = window.env.UPLOAD_PRESET;
         return;  // Don't proceed if image upload failed
       }
 
-      const response = await fetch("http://localhost:5000/api/admin/events", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/admin/events`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
