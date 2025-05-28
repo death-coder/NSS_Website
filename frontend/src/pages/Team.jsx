@@ -5,15 +5,15 @@ const teamData = {
     {
       name: "Varun Kumar Jayapaul",
       role: "Faculty Advisor",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458785/vkj_edwdlw.png",
+      linkedin: "https://www.linkedin.com/in/varunkumar-jayapaul-170001335/",
       email: ""
     },
     {
       name: "Dr. Robin Khosla",
       role: "Co-Advisor",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458786/robin_wzquya.jpg",
+      linkedin: "https://www.linkedin.com/in/robin-khosla/",
       email: ""
     },
     {
@@ -28,53 +28,53 @@ const teamData = {
     {
       name: "Om Maheshwari",
       role: "Head Coordinator",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
-      email: ""
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/om_bbj6aw.jpg",
+      linkedin: "https://www.linkedin.com/in/om-maheshwari-8a4996299/",
+      email: "b23089@students.iitmandi.ac.in"
     }
   ],
   coordinators: [
     {
       name: "Rohan Aggarwal",
       role: "Coordinator",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
-      email: ""
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/rohan_ezbzkk.jpg",
+      linkedin: "https://www.linkedin.com/in/rohan-aggarwal-3abb32323/",
+      email: "b24218@students.iitmandi.ac.in"
     },
     {
       name: "Swastik Verma",
       role: "Coordinator",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
-      email: ""
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/swastik_qxec5f.jpg",
+      linkedin: "https://www.linkedin.com/in/swastik-verma-795612319/",
+      email: "im24041@students.iitmandi.ac.in"
     },
     {
       name: "Manmeet Kaur",
       role: "Coordinator",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
-      email: ""
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458475/manmeet_o5zuyy.jpg",
+      linkedin: "https://www.linkedin.com/in/manmeet-kaur-550139309/",
+      email: "b24255@students.iitmandi.ac.in"
     },
     {
       name: "Paridhi Mittal",
       role: "Coordinator",
       img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
-      email: ""
+      linkedin: "https://www.linkedin.com/in/paridhi-mittal-69b76531b/",
+      email: "b24400@students.iitmandi.ac.in"
     },
     {
       name: "Pari",
       role: "Media Coordinator",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
-      email: ""
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458427/pari_ymf7od.jpg",
+      linkedin: "https://www.linkedin.com/in/pari-bhansali-4ba818213/",
+      email: "b24014@students.iitmandi.ac.in"
     },
     {
       name: "Utkarsh Sahu",
       role: "Media Coordinator",
       img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
-      linkedin: "",
-      email: ""
+      linkedin: "https://www.linkedin.com/in/utkarsh-sahu-989b22269/",
+      email: "b24172@students.iitmandi.ac.in"
     },
   ],
 };
@@ -99,8 +99,9 @@ function TeamSection({ title, members }) {
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-32 h-32 object-cover rounded-full border-4 border-cyan-100 shadow mb-4"
+                className="w-48 h-48 object-cover rounded-full border-4 border-cyan-100 shadow mb-4"
               />
+
               <h5 className="text-xl font-semibold text-blue-700">{member.name}</h5>
               <p className="text-sm text-gray-600 mb-4">{member.role}</p>
               <div className="flex gap-4 justify-center">

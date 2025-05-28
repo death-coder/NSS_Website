@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="footer-section">
       <div className="container">
-        <div className="footer-content pt-5 pb-5">
+        <div className="footer-content pt-5 pb-1">
           <div className="row">
             <div className="col-lg-4 col-md-6 mb-5">
               <div className="footer-info">
@@ -21,13 +21,7 @@ function Footer() {
                   <i className="bi bi-telephone-fill me-2"></i> +91 1234567890<br/>
                   <i className="bi bi-envelope-fill me-2"></i>nss@emailid_likhna_hai.com<br/>
                 </p>
-                <div className="social-links mt-3">
-                  <a href="#" className="social-icon"><i className="bi bi-facebook"></i></a>
-                  <a href="#" className="social-icon"><i className="bi bi-instagram"></i></a>
-                  <a href="#" className="social-icon"><i className="bi bi-twitter"></i></a>
-                  <a href="#" className="social-icon"><i className="bi bi-youtube"></i></a>
-                  <a href="#" className="social-icon"><i className="bi bi-linkedin"></i></a>
-                </div>
+                
               </div>
             </div>
 
@@ -65,11 +59,13 @@ function Footer() {
             <div className="col-lg-3 col-md-6 mb-5">
               <div className="footer-newsletter">
                 <h4>Connect With Us</h4>
-                <p>Subscribe to our newsletter for updates on our activities and upcoming events</p>
-                <form>
-                  <input type="email" className="form-control mb-2" placeholder="Your Email" />
-                  <button type="submit" className="btn btn-subscribe">Subscribe</button>
-                </form>
+                <div className="social-links mt-3">
+                  <a href="https://www.facebook.com/nssiitmandi/" className="social-icon"><i className="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/nss_iitmd/" className="social-icon"><i className="bi bi-instagram"></i></a>
+                  <a href="https://x.com/nssiitmandi" className="social-icon"><i className="bi bi-twitter"></i></a>
+                  <a href="https://www.youtube.com/channel/UCOcDY0cRk4SuWXZ6Hy7wcWg" className="social-icon"><i className="bi bi-youtube"></i></a>
+                  <a href="#" className="social-icon"><i className="bi bi-linkedin"></i></a>
+                </div>
               </div>
             </div>
           </div>

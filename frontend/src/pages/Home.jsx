@@ -127,10 +127,10 @@ function RecentEvents() {
 
 function ImpactStats() {
   const stats = [
-    { id: 1, number: "500+", label: "Volunteers" },
+    { id: 1, number: "150+", label: "New Volunteers every year" },
     { id: 2, number: "50+", label: "Events" },
-    { id: 3, number: "1000+", label: "Service Hours" },
-    { id: 4, number: "20+", label: "Awards" }
+    { id: 3, number: "4000+", label: "Service Hours" },
+    { id: 4, number: "10+", label: "Guest Appearances every year" }
   ];
 
   return (
@@ -170,17 +170,38 @@ function Testimonials() {
     },
     {
       id: 3,
-      name: "ParidhiM",
+      name: "Rohan",
       role: "NSS Coordinator",
-      image: "https://icons.veryicon.com/png/o/system/ali-mom-icon-library/random-user.png",
-      quote: "The enthusiasm and dedication of our volunteers make every project successful and impactful."
+      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/rohan_ezbzkk.jpg",
+      quote: "Being part of NSS helped me connect deeply with communities and understand the real meaning of service."
     },
     {
       id: 4,
-      name: "ParidhiMittal",
+      name: "Om",
       role: "NSS Coordinator",
-      image: "https://icons.veryicon.com/png/o/system/ali-mom-icon-library/random-user.png",
-      quote: "The enthusiasm and dedication of our volunteers make every project successful and impactful."
+      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/om_bbj6aw.jpg",
+      quote: "NSS gave me the opportunity to grow personally while making a tangible difference in others’ lives."
+    },
+    {
+      id: 5,
+      name: "Manmeet",
+      role: "NSS Coordinator",
+      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458475/manmeet_o5zuyy.jpg",
+      quote: "Through NSS, I learned that leadership is about empathy, action, and commitment to social change."
+    },
+    {
+      id: 6,
+      name: "Pari",
+      role: "NSS Coordinator",
+      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458427/pari_ymf7od.jpg",
+      quote: "My journey with NSS transformed my perspective on society and strengthened my resolve to contribute to it."
+    },
+    {
+      id: 7,
+      name: "Swastik",
+      role: "NSS Coordinator",
+      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/swastik_qxec5f.jpg",
+      quote: "Volunteering with NSS not only built my confidence but also instilled in me a lifelong sense of responsibility."
     },
   ];
 
