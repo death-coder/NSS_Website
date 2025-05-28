@@ -19,9 +19,6 @@ const Navbar = () => {
             alt="NSS Logo"
             className="w-12 h-12 rounded-full shadow-lg"
           />
-          <span className="text-2xl font-semibold text-gray-800 tracking-wide drop-shadow-lg">
-            NSS IIT Mandi
-          </span>
         </Link>
 
         {/* Navigation Items */}
