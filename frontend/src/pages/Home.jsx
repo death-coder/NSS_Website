@@ -158,7 +158,7 @@ function Testimonials() {
       id: 1,
       name: "Utkarsh",
       role: "NSS Coordinator",
-      image: "https://icons.veryicon.com/png/o/system/ali-mom-icon-library/random-user.png",
+      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748672867/utk_tjt1np.jpg",
       quote: "Being part of NSS has been a life-changing experience. I've learned the value of service and community."
     },
     {

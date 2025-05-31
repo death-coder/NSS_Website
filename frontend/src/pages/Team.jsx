@@ -72,7 +72,7 @@ const teamData = {
     {
       name: "Utkarsh Sahu",
       role: "Media Coordinator",
-      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
+      img: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748672867/utk_tjt1np.jpg",
       linkedin: "https://www.linkedin.com/in/utkarsh-sahu-989b22269/",
       email: "b24172@students.iitmandi.ac.in"
     },
