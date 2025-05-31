@@ -18,8 +18,8 @@ function Footer() {
                 </p>
                 <p>
                   <i className="bi bi-geo-alt-fill me-2"></i> Mandi, Himachal Pradesh<br/>
-                  <i className="bi bi-telephone-fill me-2"></i> +91 1234567890<br/>
-                  <i className="bi bi-envelope-fill me-2"></i>nss@emailid_likhna_hai.com<br/>
+                  <i className="bi bi-telephone-fill me-2"></i> +91 8859141410<br/>
+                  <i className="bi bi-envelope-fill me-2"></i>nss@iitmandi.ac.in<br/>
                 </p>
                 
               </div>
