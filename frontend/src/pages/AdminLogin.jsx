@@ -8,9 +8,8 @@ function AdminLogin() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const isAdminLoggedIn = localStorage.getItem("isAdminLoggedIn");
-    if (isAdminLoggedIn) {
-      navigate("/admin/dashboard");
+    if (sessionStorage.getItem('authToken')) {
+      navigate('/admin/dashboard');
     }
   }, [navigate]);
 
@@ -19,33 +18,27 @@ function AdminLogin() {
     setLoading(true);
 
     try {
-      const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/events/login`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ username, password }),
-        }
-      );
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/events/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
 
       const data = await response.json();
-
-      if (response.ok) {
-        localStorage.setItem("isAdminLoggedIn", true);
-        navigate("/admin/dashboard");
+      if (response.ok && data.token) {
+        sessionStorage.setItem('authToken', data.token);
+        navigate('/admin/dashboard');
       } else {
-        alert(data.message || "Invalid credentials");
+        alert(data.message || 'Invalid credentials');
       }
     } catch (error) {
-      console.error("Login error:", error);
-      alert("Something went wrong. Try again later.");
+      console.error('Login error:', error);
+      alert('Something went wrong. Try again later.');
     } finally {
       setLoading(false);
     }
   };
-
+  
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cyan-50 via-blue-100 to-indigo-100 relative overflow-hidden">
       {/* Decorative blurred circle */}

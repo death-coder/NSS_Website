@@ -77,21 +77,21 @@ function RecentEvents() {
     {
       id: 1,
       title: "Tree Plantation Drive",
-      date: "April 32, 2025",
+      // date: "April 32, 2025",
       image: "https://images.unsplash.com/photo-1625758476104-f2ed6c81248f",
       description: "Join us for a tree plantation drive at the college campus."
     },
     {
       id: 2,
       title: "Teach Your Neighbour",
-      date: "March 32, 2025",
+      // date: "March 32, 2025",
       image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748199842/TYN_czvnhx.jpg",
       description: "Annual blood donation camp organized in collaboration with local hospital."
     },
     {
       id: 3,
       title: "HIV Awareness",
-      date: "February 32, 2025",
+      // date: "February 32, 2025",
       image: "https://plus.unsplash.com/premium_photo-1723568541719-a9abad0b7919",
       description: "Spreading awareness about HIV AIDS among citizens"
     }
@@ -107,7 +107,7 @@ function RecentEvents() {
             <div key={event.id} className="bg-white/60 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-white/30 transition">
               <img src={event.image} alt={event.title} className="w-full h-48 object-cover" />
               <div className="p-6">
-                <span className="text-sm text-gray-500">{event.date}</span>
+                {/* <span className="text-sm text-gray-500">{event.date}</span> */}
                 <h3 className="text-xl font-semibold mt-2 text-blue-700">{event.title}</h3>
                 <p className="text-gray-700 mt-2">{event.description}</p>
                 {/* <button className="mt-4 text-blue-600 hover:underline font-semibold">Read More</button> */}
@@ -156,31 +156,31 @@ function Testimonials() {
   const testimonials = [
     {
       id: 1,
+      name: "Om",
+      role: "NSS Coordinator",
+      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/om_bbj6aw.jpg",
+      quote: "NSS gave me the opportunity to grow personally while making a tangible difference in others’ lives."
+    },
+    {
+      id: 2,
       name: "Utkarsh",
       role: "NSS Coordinator",
       image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748672867/utk_tjt1np.jpg",
       quote: "Being part of NSS has been a life-changing experience. I've learned the value of service and community."
     },
     {
-      id: 2,
+      id: 3,
       name: "Paridhi",
       role: "NSS Coordinator",
       image: "https://icons.veryicon.com/png/o/system/ali-mom-icon-library/random-user.png",
       quote: "The enthusiasm and dedication of our volunteers make every project successful and impactful."
     },
     {
-      id: 3,
+      id: 4,
       name: "Rohan",
       role: "NSS Coordinator",
       image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/rohan_ezbzkk.jpg",
       quote: "Being part of NSS helped me connect deeply with communities and understand the real meaning of service."
-    },
-    {
-      id: 4,
-      name: "Om",
-      role: "NSS Coordinator",
-      image: "https://res.cloudinary.com/dfiyyyjp8/image/upload/v1748458581/om_bbj6aw.jpg",
-      quote: "NSS gave me the opportunity to grow personally while making a tangible difference in others’ lives."
     },
     {
       id: 5,
